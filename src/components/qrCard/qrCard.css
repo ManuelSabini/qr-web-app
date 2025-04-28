@@ -1,0 +1,14 @@
+.QrCard{
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.sectionQrCard{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
