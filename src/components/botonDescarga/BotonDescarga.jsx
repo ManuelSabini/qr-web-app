@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from "antd";
 import './botonDescarga.css'
 
-const Boton = ({texto, color, icon, nombreArchivo}) => {
+const BotonDescarga = ({texto, color, icon, nombreArchivo}) => {
     const downloadSvgQRCode = () => {
         var _a;
         const svg =
@@ -37,4 +37,4 @@ const Boton = ({texto, color, icon, nombreArchivo}) => {
     )
 }
 
-export default Boton
+export default BotonDescarga
