@@ -4,6 +4,7 @@ import './formConfig.css';
 import { Input, Space } from 'antd';
 import Selector from '../selector/Selector.jsx';
 import BotonLimpiar from '../botonLimpiar/BotonLimpiar.jsx';
+import FormAutomatico from '../formAutomatico/FormAutomatico.jsx';
 
 const FormConfig = ({setValorInsertado, valor}) => {
   const [modo, setModo] = useState("manual")
@@ -23,10 +24,12 @@ const FormConfig = ({setValorInsertado, valor}) => {
           </div>
         </>
       )
-    } else if(opcion.modo == 'auto') {
+    } else if(opcion.modo == 'auto') {  
       return (
         <>
-          
+          <div id='inputAuto'>
+            <FormAutomatico valor={valor} setValor={setValorInsertado}/>
+          </div>
         </>
       )
     }
@@ -34,7 +37,7 @@ const FormConfig = ({setValorInsertado, valor}) => {
   return (
     <section>
       <Card className='Card'>
-        <Selector modo={modo} setModo={setModo}/>
+        <Selector modo={modo} setModo={setModo} setValor={setValorInsertado}/>
         {panelModo({modo})}
       </Card>
     </section>  

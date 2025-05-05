@@ -11,10 +11,12 @@ const QrCard = ({valorInsertado}) => {
   },[valorInsertado])
 
   return (
-    <Card className='sectionQrCard'>
-        <QRCode value={valorInsertado} className='QrCard' status="active" type="svg" id="qrActual"/>
-        <BotonDescarga texto={"Descargar"} color={"danger"} icon={<CloudDownloadOutlined />} nombreArchivo={"QrCatch-"+valorInsertado+".svg"}></BotonDescarga>
-    </Card>
+    <section>
+      <Card className='sectionQrCard'>
+          <QRCode value={valorInsertado} className='QrCard' status="active" type="svg" id="qrActual" size={250}/>
+          <BotonDescarga texto={"Descargar"} color={"danger"} icon={<CloudDownloadOutlined />} nombreArchivo={"QrCatch-"+valorInsertado+".svg"}></BotonDescarga>
+      </Card>
+    </section>
   )
 }
 

@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <>
             <footer>
-                ©{new Date().getFullYear()} Creado por <a href="https://www.linkedin.com/in/manuel-sabini">Manuel Sabini</a>
+                ©{new Date().getFullYear()} Creado por <a href="https://github.com/ManuelSabini">Manuel Sabini</a>
             </footer>
         </>
     )

@@ -1,5 +1,6 @@
 .Card{
     margin: 10px;
+    height: 100%;
 }
 
 h2{
@@ -10,4 +11,21 @@ h2{
 #inputManual{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#controlesAutomatico{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+#valorActualAutomatico{
+    display: flex;
+    justify-content: center;
+}
+
+#contadorAutomatico{
+    display: flex;
+    justify-content: center;
 }

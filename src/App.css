@@ -1,3 +1,24 @@
 *{
     margin: 0px
 }
+
+main {
+    display: flex; /* Para disposición horizontal por defecto */
+    flex-direction: row;
+}
+
+section {
+    flex: 1; /* Para que las cards se distribuyan equitativamente en el espacio disponible */
+    /* Otros estilos de la card */
+}
+
+  /* Media query para pantallas más pequeñas (ej. móviles) */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column; /* Cambia a disposición vertical */
+    }
+    section {
+        flex: none; /* Evita que las cards se expandan demasiado en vertical */
+        width: 100%; /* O el ancho que desees */
+    }
+}
