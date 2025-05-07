@@ -7,7 +7,7 @@ const Header = () => {
         <header>
             <Logo />
             <div className='nombreApp'>
-                <h1>QRcatch</h1>
+                <h1>csv2QR</h1>
             </div>
         </header>
     )

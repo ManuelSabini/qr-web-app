@@ -13,8 +13,8 @@ const QrCard = ({valorInsertado}) => {
   return (
     <section>
       <Card className='sectionQrCard'>
-          <QRCode value={valorInsertado} className='QrCard' status="active" type="svg" id="qrActual" size={250}/>
-          <BotonDescarga texto={"Descargar"} color={"danger"} icon={<CloudDownloadOutlined />} nombreArchivo={"QrCatch-"+valorInsertado+".svg"}></BotonDescarga>
+          <QRCode value={valorInsertado} className='QrCard' status="active" type="canvas" id="qrActual" bordered={false} size={250}/>
+          <BotonDescarga texto={"Descargar"} color={"danger"} icon={<CloudDownloadOutlined />} nombreArchivo={"QrCatch-"+valorInsertado+".jpg"}></BotonDescarga>
       </Card>
     </section>
   )

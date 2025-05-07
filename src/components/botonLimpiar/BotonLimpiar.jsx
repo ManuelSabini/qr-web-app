@@ -15,7 +15,6 @@ const BotonLimpiar = ({setValorInsertado, ref}) => {
         <Button 
             id='botonLimpiar' 
             type="primary" 
-            danger 
             icon={<DeleteOutlined />}
             onClick={borrarValores}
         />

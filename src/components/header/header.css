@@ -6,11 +6,12 @@ header{
     justify-content: center;
     height: 40px;
     color: whitesmoke;
-    background-color: #194d5d;
+    background-color: #2C3E50;
+/*     background-color: #194d5d; */
 }
 
 .nombreApp{
-    width: 150px;
+    width: 120px;
     height: 50px;
 }
 

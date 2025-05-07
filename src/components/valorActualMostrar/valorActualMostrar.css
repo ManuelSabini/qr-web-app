@@ -1,5 +1,6 @@
 .cardValor{
     padding: 10px;
-    border: 1px solid gray;
+    border: 1px dashed gray;
     border-radius: 3px;
+    width: 95%;
 }

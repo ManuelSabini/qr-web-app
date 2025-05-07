@@ -1,4 +1,5 @@
 #botonLimpiar{
     display: flex;
     justify-content: space-around;
+    background-color: #f32013 ;
 }

@@ -20,7 +20,9 @@ const FormAutomatico = ({valor, setValor}) => {
     }
 
     const cargaDeDatos = (data) =>{
+        console.log(data)
         setDatos(data)
+        setIsOpen(false)
     }
 
     useEffect(() => {
@@ -35,8 +37,10 @@ const FormAutomatico = ({valor, setValor}) => {
                 language='es'
                 modalIsOpen={isOpen}
                 modalOnCloseTriggered={() => setIsOpen(false)}
-                darkMode={false}    
-                onComplete={(data) => setDatos(data)}
+                darkMode={false}
+                onComplete={(data) => cargaDeDatos(data)}
+                primaryColor='#2C3E50'
+                skipHeaderRowSelection={true}
                 template={{
                     columns: [
                         {
@@ -52,7 +56,7 @@ const FormAutomatico = ({valor, setValor}) => {
                 <BotonControl icon={<StepBackwardOutlined />} iconPosition='start' formula={anteriorContador}>Anterior</BotonControl>
                 <BotonControl icon={<StepForwardOutlined />} iconPosition='end' formula={siguienteContador}>Siguiente</BotonControl>
             </Space.Compact>
-            <Space id='valorActualAutomatico' size="middle"  style={{ width: '100%' }}>
+            <Space id='valorActualAutomatico' size="middle" direction='vertical' style={{ width: '100%' }}>
                 <Contador block valor={contador} datos={datos}/>
                 <ValorActualMostrar block valor={valor}/>
             </Space>

@@ -1,12 +1,34 @@
 footer{    
     width: 100%;
-    height: 20px;
-    background-color: lightgray;
-    font-size: small;
-    display: inline-block;
-    text-align: center;
+    height: 45px;
+    background-color: #D3D3D3;
     padding-bottom: 3px;
     position: fixed;
     bottom: 0;
     left: 0;
+}
+
+footer p{
+    font-size: small;
+    text-align: center;
+    display: inline-block;
+}
+
+.socialMediaIcons{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#iconLinkedin{
+    font-size: x-large;
+    color: #0a66c2;
+    padding-right: 5px;
+}
+
+
+#iconGithub{
+    font-size: x-large;
+    color: black;
+    padding-left: 5px;
 }

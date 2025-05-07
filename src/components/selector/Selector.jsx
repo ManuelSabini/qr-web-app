@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Radio } from "antd";
+import { Radio, Tooltip } from "antd";
 import './selector.css'
 
 
@@ -13,12 +13,12 @@ const Selector = ({modo, setModo, setValor}) => {
     
     const opcionesMobil = [
         { value: "manual", label: "Manual" },
-        { value: "auto", label: "Automatico", disabled: true},
+        { value: "auto", label: "CSV (Solo PC)", disabled: true}
     ]
     
     const opcionesEscritorio = [
         { value: "manual", label: "Manual" },
-        { value: "auto", label: "Automatico", disabled: false},
+        { value: "auto", label: "CSV", disabled: false},
     ]
 
     const [opcionesTamañoPantalla, setOpcionesTamañoPantalla] = useState(opcionesMobil)

@@ -10,10 +10,22 @@ const BotonDescarga = ({texto, color, icon, nombreArchivo}) => {
             ? void 0
             : _a.querySelector('svg');
         const svgData = new XMLSerializer().serializeToString(svg);
-        const blob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
+        const blob = new Blob([svgData], { type: 'image/jpg;charset=utf-8' });
         const url = URL.createObjectURL(blob);
         doDownload(url, nombreArchivo);
         };
+
+    const downloadCanvasQRCode = () => {
+        var _a;
+        const canvas =
+            (_a = document.getElementById('qrActual')) === null || _a === void 0
+                ? void 0
+                : _a.querySelector('canvas');
+        if (canvas) {
+            const url = canvas.toDataURL();
+            doDownload(url, nombreArchivo);
+        }
+    };
 
         function doDownload(url, fileName) {
             const a = document.createElement('a');
@@ -26,11 +38,11 @@ const BotonDescarga = ({texto, color, icon, nombreArchivo}) => {
     return (
         <Button 
             type="primary" 
-            color={color} 
+            color={"gold"} 
             block 
             className='boton' 
             icon={icon}
-            onClick={downloadSvgQRCode}
+            onClick={downloadCanvasQRCode}
             >
             {texto}
         </Button>
