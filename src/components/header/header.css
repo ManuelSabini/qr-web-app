@@ -1,6 +1,5 @@
 header{
     border-bottom: 1px solid black;
-    height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -12,10 +11,19 @@ header{
 
 .nombreApp{
     width: 120px;
-    height: 50px;
+    height: 40px;
 }
 
 h1{
     text-align: center;
     font-size: xx-large;
+}
+
+#traslationIcon{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    inset-inline-end: 30px;
 }

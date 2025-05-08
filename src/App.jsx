@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <Header/>
+      <Header />
       <main>
         <FormConfig setValorInsertado={setValor} valor={valor}/>
         {estado == "active" ? <QrCard valorInsertado={valor}/> : null}

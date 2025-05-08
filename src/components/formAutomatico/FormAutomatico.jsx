@@ -6,11 +6,13 @@ import Contador from '../contador/Contador.jsx';
 import { StepBackwardOutlined, StepForwardOutlined, CaretRightOutlined } from '@ant-design/icons';
 import ValorActualMostrar from '../valorActualMostrar/ValorActualMostrar.jsx';
 import ControladorValor from '../controladorValor/ControladorValor.jsx';
+import { useTranslation } from '../idiomaContext/idiomaContext.jsx';
 
 const FormAutomatico = ({valor, setValor}) => {
     const [isOpen, setIsOpen] = useState(false);
     const [datos, setDatos] = useState({});
     const [contador, setContador] = useState(1);
+    const { t, locale } = useTranslation()
 
     const siguienteContador = () => {
         contador == datos.num_rows ? setContador(1) : setContador(contador+1)
@@ -32,9 +34,9 @@ const FormAutomatico = ({valor, setValor}) => {
 
     return (
         <>
-            <Button onClick={() => setIsOpen(true)} block>Importar CSV</Button>
+            <Button onClick={() => setIsOpen(true)} block>{t('importCSVButton')}</Button>
             <CSVImporter
-                language='es'
+                language={locale}
                 modalIsOpen={isOpen}
                 modalOnCloseTriggered={() => setIsOpen(false)}
                 darkMode={false}
@@ -44,8 +46,8 @@ const FormAutomatico = ({valor, setValor}) => {
                 template={{
                     columns: [
                         {
-                            name: "Valor",
-                            key: "Valor",
+                            name: 'Valor',
+                            key: 'Valor',
                             required: true,
                             description: "Valores a generar codigos QR",
                         },
@@ -53,8 +55,8 @@ const FormAutomatico = ({valor, setValor}) => {
                 }}
             />
             <Space.Compact id='controlesAutomatico'block style={{ width: '100%' }}>
-                <BotonControl icon={<StepBackwardOutlined />} iconPosition='start' formula={anteriorContador}>Anterior</BotonControl>
-                <BotonControl icon={<StepForwardOutlined />} iconPosition='end' formula={siguienteContador}>Siguiente</BotonControl>
+                <BotonControl icon={<StepBackwardOutlined />} iconPosition='start' formula={anteriorContador}>{t('previusButton')}</BotonControl>
+                <BotonControl icon={<StepForwardOutlined />} iconPosition='end' formula={siguienteContador}>{t('nextButton')}</BotonControl>
             </Space.Compact>
             <Space id='valorActualAutomatico' size="middle" direction='vertical' style={{ width: '100%' }}>
                 <Contador block valor={contador} datos={datos}/>

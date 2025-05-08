@@ -5,9 +5,11 @@ import { Input, Space } from 'antd';
 import Selector from '../selector/Selector.jsx';
 import BotonLimpiar from '../botonLimpiar/BotonLimpiar.jsx';
 import FormAutomatico from '../formAutomatico/FormAutomatico.jsx';
+import { useTranslation } from '../idiomaContext/idiomaContext.jsx';
 
 const FormConfig = ({setValorInsertado, valor}) => {
   const [modo, setModo] = useState("manual")
+  const { t } = useTranslation()
   const inputRef = useRef(null);
   const cambiosValores = (event) => {
     setValorInsertado(event.target.value);
@@ -18,7 +20,7 @@ const FormConfig = ({setValorInsertado, valor}) => {
         <>
           <div id='inputManual'>
             <Space.Compact style={{ width: '100%' }}>
-              <Input addonBefore="Valor" value={valor} onChange={cambiosValores} placeholder="Ingrese valor a generar..." ref={inputRef}/>
+              <Input addonBefore={t('value')} value={valor} onChange={cambiosValores} placeholder={t('valuePlaceholder')} ref={inputRef}/>
               <BotonLimpiar setValorInsertado={setValorInsertado} ref={inputRef}/>
             </Space.Compact>
           </div>
