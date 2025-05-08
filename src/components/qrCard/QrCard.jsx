@@ -16,7 +16,7 @@ const QrCard = ({valorInsertado}) => {
     <section>
       <Card className='sectionQrCard'>
           <QRCode value={valorInsertado} className='QrCard' status="active" type="canvas" id="qrActual" bordered={false} size={250}/>
-          <BotonDescarga texto={t('downloadButton')} color={"danger"} icon={<CloudDownloadOutlined />} nombreArchivo={"QrCatch-"+valorInsertado+".jpg"}></BotonDescarga>
+          <BotonDescarga texto={t('downloadButton')} color={"danger"} icon={<CloudDownloadOutlined />} nombreArchivo={"csv2QR-"+valorInsertado+".jpg"}></BotonDescarga>
       </Card>
     </section>
   )
