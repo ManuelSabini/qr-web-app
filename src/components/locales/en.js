@@ -3,11 +3,11 @@ export const en = {
     "author": "Created by Manuel Sabini",
     "value": "Value",
     "manualButton" : "Manual",
-    "csvButton" : "CSV",
-    "csvButtonDisable" : "CSV (PC Only)",
-    "importCSVButton" : "Import CSV file",
+    "csvButton" : "XLSX/CSV",
+    "csvButtonDisable" : "XLSX/CSV (PC Only)",
+    "importCSVButton" : "Import XLSX / CSV file",
     "nextButton" : "Next",
     "previusButton" : "Previous",
-    "CSVMsjPending" : "Upload a .csv file",
+    "CSVMsjPending" : "Upload a .xlsx or .csv file",
     "valuePlaceholder" : "Enter the value to be generated..."
 };    

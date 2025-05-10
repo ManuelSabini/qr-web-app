@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { Radio, Tooltip } from "antd";
 import './selector.css'
 import { useTranslation } from '../idiomaContext/idiomaContext.jsx';
+import { FileAddOutlined } from '@ant-design/icons';
+
 
 
 const Selector = ({modo, setModo, setValor}) => {
@@ -14,22 +16,22 @@ const Selector = ({modo, setModo, setValor}) => {
 
     const opcionesMobil_es = [
         { value: "manual", label: "Manual" },
-        { value: "auto", label: "CSV (Solo PC)", disabled: true}
+        { value: "auto", label: "Archivo (Solo PC)", disabled: true}
     ]
 
     const opcionesMobil_en = [
         { value: "manual", label: "Manual" },
-        { value: "auto", label: "CSV (PC Only)", disabled: true}
+        { value: "auto", label: "From file (PC Only)", disabled: true}
     ]
     
     const opcionesEscritorio_es = [
         { value: "manual", label: "Manual" },
-        { value: "auto", label: "CSV", disabled: false},
+        { value: "auto", label: "Desde Archivo", disabled: false},
     ]
     
     const opcionesEscritorio_en = [
         { value: "manual", label: "Manual" },
-        { value: "auto", label: "CSV", disabled: false},
+        { value: "auto", label: "From file", disabled: false},
     ]
 
     const idiomaOpciones = () => {
