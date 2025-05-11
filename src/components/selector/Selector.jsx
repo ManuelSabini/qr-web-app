@@ -21,7 +21,7 @@ const Selector = ({modo, setModo, setValor}) => {
 
     const opcionesMobil_en = [
         { value: "manual", label: "Manual" },
-        { value: "auto", label: "From file (PC Only)", disabled: true}
+        { value: "auto", label: "File (PC Only)", disabled: true}
     ]
     
     const opcionesEscritorio_es = [
