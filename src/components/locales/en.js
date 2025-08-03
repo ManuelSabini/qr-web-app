@@ -9,5 +9,16 @@ export const en = {
     "nextButton" : "Next",
     "previusButton" : "Previous",
     "CSVMsjPending" : "Upload a .xlsx or .csv file",
-    "valuePlaceholder" : "Enter the value to be generated..."
+    "valuePlaceholder" : "Enter the value to be generated...",
+    "factSectionTitle" : "FAQs",
+    "question1": "Why can't I import a file from my mobile phone?",
+    "response1": "This functionality is not yet available for mobile phones due to screen resolution limitations. I will try to make it available in future deployments.",
+    "question2": "What types of files can be imported?",
+    "response2": "Currently, only CSV, TSV, XLS, and XLSX files can be imported.",
+    "question3": "How should the file be prepared for correct import?",
+    "response3": "The file should be prepared with values in a single column, with a single column header named 'Value'. To ensure correct table completion, you can download the template from the bottom right corner in the file import section.",
+    "question4": "What is the QR error correction capacity set to?",
+    "response4": "The level is set to M, approximately 15%.",
+    "question5": "What libraries does the application use?",
+    "response5": "The application uses libraries such as Ant Design for building the frontend and generating QR codes, as well as the csv-import-react package for processing imported files. For more information, please check the repository."
 };    

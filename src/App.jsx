@@ -4,6 +4,7 @@ import Header from './components/header/Header.jsx'
 import FormConfig from './components/formConfig/FormConfig.jsx'
 import QrCard from './components/qrCard/QrCard.jsx'
 import Footer from './components/footer/Footer.jsx'
+import Facs from './components/facs/Facs.jsx'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <FormConfig setValorInsertado={setValor} valor={valor}/>
         {estado == "active" ? <QrCard valorInsertado={valor}/> : null}
       </main>
+      <Facs/>
       <Footer/>
     </>
   ) 

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 import { es } from '../locales/es.js';
 import { en } from '../locales/en.js';
 
@@ -17,8 +17,22 @@ export const I18nProvider = ({ children }) => {
     };
 
     const changeLocale = (newLocale) => {
-        setLocale(newLocale);
+        setLocale(newLocale)
     };
+
+    useEffect(() => {
+        if (navigator && navigator.language) {
+            if (navigator.language.split('-')[0] === 'es'){
+                setLocale(navigator.language.split('-')[0]);
+            }
+            else {
+                setLocale('en'); // Idioma por defecto
+            }
+        } else {
+        // Fallback si no se puede detectar (muy raro)
+        setLocale('en'); // Idioma por defecto
+        }
+    }, []);
 
     return (
         <I18nContext.Provider value={{ locale, t, changeLocale }}>
