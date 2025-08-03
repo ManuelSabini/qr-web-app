@@ -16,7 +16,7 @@ export const en = {
     "question2": "What types of files can be imported?",
     "response2": "Currently, only CSV, TSV, XLS, and XLSX files can be imported.",
     "question3": "How should the file be prepared for correct import?",
-    "response3": "The file should be prepared with values in a single column, with a single column header named 'Value'. To ensure correct table completion, you can download the template from the bottom right corner in the file import section.",
+    "response3": "The file should be prepared with values in a single column, with a single column header named 'Valor'. To ensure correct table completion, you can download the template from the bottom right corner in the file import section.",
     "question4": "What is the QR error correction capacity set to?",
     "response4": "The level is set to M, approximately 15%.",
     "question5": "What libraries does the application use?",

@@ -11,14 +11,14 @@ export const es = {
     "CSVMsjPending" : "Cargue un archivo .xlsx o .csv",
     "valuePlaceholder" : "Ingrese el valor a generar...",
     "factSectionTitle" : "Preguntas Frecuentes",
-    "question1" : "¿Porque no puedo importar un archivo desde mi telefono movil?",
-    "response1" : "Esa funcionalidad por el momento aun no esta disponible para telefonos moviles por visualizacion dada la resolucion de pantalla. Tratare de disponbilizarlo en proximos despliegues.",
-    "question2" : "¿Que tipos de archivos se pueden importar?",
+    "question1" : "¿Por que no puedo importar un archivo desde mi telefono movil?",
+    "response1" : "Esa funcionalidad por el momento aun no está disponible para telefonos móviles por visualizacion dada la resolucion de pantalla. Tratare de disponbilizarlo en proximos despliegues.",
+    "question2" : "¿Qué tipos de archivos se pueden importar?",
     "response2" : "Por el momento solamente CSV, TSV, XLS y XLSX.",
     "question3" : "¿Como debe ser confeccionado el archivo para que se importe correctamente?",
-    "response3" : "El archivo debe ser confeccionado disponiendo los valores sobre una unica columna, con un solo encabezado de columna con el campo 'Valor'. Para garantizar el correcto completado de la tabla puedes descargar la plantilla desde el margen inferior derecho en la seccion de importacion de archivo.",
+    "response3" : "El archivo debe ser confeccionado disponiendo los valores sobre una unica columna, con un solo encabezado de columna con el campo 'Valor'. Para garantizar el correcto completado de la tabla puedes descargar la plantilla desde el margen inferior derecho en la sección de importacion de archivo.",
     "question4" : "¿En cuanto esta establecida la capacidad de correccion de errores del QR?",
-    "response4" : "El nivel esta prefijado en M, aproximadamente 15%",
-    "question5" : "¿Que librerias usa la aplicacion?",
-    "response5" : "La aplicacion utiliza librerias como antd para el armado del front de la aplicacion y confeccion de los codigos QR como tambien el paquete csv-import-react para procesar los archivos importados. Para mas informacion revisar el repositorio."
+    "response4" : "El nivel está prefijado en M, aproximadamente 15%",
+    "question5" : "¿Qué librerias usa la aplicación?",
+    "response5" : "La aplicación utiliza librerias como antd para el armado del front y confección de los codigos QR como también el paquete csv-import-react para procesar los archivos importados. Para más información revisar el repositorio."
 };    
