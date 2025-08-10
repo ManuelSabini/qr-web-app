@@ -2,4 +2,4 @@
 
 This is an APP devoloped to help people to generate bulk QR codes in a easy and quickly way. 
 
-The only thing that you have to do is upload a CSV file and it's done. You can visualize your QR ion your screen. You may download it too. 
+The only thing that you have to do is upload a CSV file and it's done. You can visualize your QR on your screen. You may download it too. 
